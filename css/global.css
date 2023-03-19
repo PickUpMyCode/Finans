@@ -26,7 +26,9 @@ footer a {
 	font-size: 12px;
 }
 
+
 @media (max-width: 576px) { 
+	/* NAVBAR  */
 	header .navbar-collapse{
 		position: absolute;
 		z-index: 3;
