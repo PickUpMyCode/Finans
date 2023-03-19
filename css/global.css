@@ -25,3 +25,16 @@ footer a {
 #copyright{
 	font-size: 12px;
 }
+
+@media (max-width: 576px) { 
+	header .navbar-collapse{
+		position: absolute;
+		z-index: 3;
+		background-color: #ffc107ed;
+		top: 60px;
+		width: 100%;
+		padding: 20px;
+		border-bottom: 2px solid rgb(151, 151, 7);
+		margin-left: -12px;
+	}	
+}
