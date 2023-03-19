@@ -1,10 +1,26 @@
+/* NAVBAR */
 
+.navbar-toggler {
+	border-color: transparent;
+	color: white;
+	font-size: xx-large;
+}
+.navbar-toggler:hover .navbar-toggler-icon{
+	color:white;
+}
+
+/* NAVBAR END */
 
 .caixa {
 	padding: 60px 0;
 	border-bottom: 1px solid #e5e5e5;
 }
 
+
+/* FOOTER */
+footer{
+	box-shadow: inset 0 5px 10px 1px rgba(0, 0, 0, 0.2) ;
+}
 footer a {
 	text-decoration: none;
 }

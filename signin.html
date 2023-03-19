@@ -9,6 +9,9 @@
     <!-- NORMALIZE CSS -->
     <link rel="stylesheet" href="normalize.css">
 
+    <!-- ICONIFY -->
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -19,6 +22,8 @@
 
     <!-- Estilo customizado -->
     <link rel="stylesheet" type="text/css" href="css/global.css">
+
+    <link rel="stylesheet" href="css/signin.css">
 
     <title>Sign In | Finans</title>
 </head>
@@ -32,8 +37,8 @@
                     <img src="img/logo.png" width="142">
                 </a>
 
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-principal">
+                    <iconify-icon icon="dashicons:menu"></iconify-icon>
                 </button>
 
                 <div class="collapse navbar-collapse" id="nav-principal">
@@ -60,10 +65,40 @@
         </nav>
     </header><!--/fim Cabecalho -->
 
-    <footer class="mt-4 mb-4">
+
+    <section id="login">
+        <div class="container">
+            <form>
+                <h3>Login</h3>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Please, input your email address.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                      <div id="emailHelp" class="form-text">Please, input your passaword.</div>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Keep me login</label>
+                    
+                </div>
+                <div class="row">
+                    <button type="submit" class=" btn btn-primary w-25 mx-auto">Login</button>
+                </div>
+               
+            </form>
+        </div>
+    </section>
+
+    <p class="spacer"></p>
+    <!-- inicio footer -->
+    <footer class="p-4">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 d-flex gap-2">
+                <div class="col-md-4 d-flex justify-content-center justify-content-md-start gap-2">
 
                     <a href="">Home</a>
                     <a href="">Recursos</a>
@@ -71,11 +106,11 @@
                     <a href="">Preços</a>
 
                 </div>
-                <div id="copyright" class="col-md-4 text-center">
+                <div id="copyright" class="col-md-4 text-center d-flex align-items-center">
                     <small>Feito por Matheus Viana | Web developer. Acesse o meu <a href="https://vianav19.github.io"
                             target="_blank">Portfólio</a>.</small>
                 </div>
-                <div class="col-md-4 d-flex justify-content-end gap-2">
+                <div class="col-md-4 d-flex justify-content-center justify-content-md-end gap-2">
                     <a href="" class="btn btn-outline-dark">
                         <i class="fab fa-facebook"></i>
                     </a>
@@ -92,6 +127,17 @@
             </div>
         </div>
     </footer>
+    <!-- fim footer -->
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    
 </body>
 
 </html>
