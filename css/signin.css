@@ -1,31 +1,51 @@
-:where(html, body, #login) {
+:where(html, body) {
     height: 100%;
 }
 
 body {
+    margin-bottom: 100px;
     background-color: var(--bs-yellow);
 }
 
 #login {
     display: flex;
     align-items: center;
-    height: 75%;
+    height: 66%;
+    /* border: 1px solid red; */
 }
 
 #login form {
+    margin:  0 auto;
     background-color: var(--bs-gray-200);
-    padding: 40px;
+    padding: 20px;
+    width: 50%;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
-    z-index: 1;
-    position: relative;
 }
 
 footer {
-    margin-top: 10px;
     position: absolute;
     bottom: 0;
+    height: 24%;
     width: 100%;
+    display: flex;
+    align-items: center;
     background-color: var(--bs-gray-100);
 }
 
 
+@media (max-width: 992px) {
+    #login form{
+        width: 75%;
+    }
+}
+@media (max-width: 576px) {
+    #login form{
+        width: 90%;
+    }
+    footer {
+        bottom: -10%;
+    }
+    #login {
+        margin-top: 5%
+    }
+}
